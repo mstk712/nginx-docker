@@ -28,4 +28,8 @@ RUN apk --no-cache add wget bash git gcc build-base openssl-dev pcre-dev ca-cert
 
 USER nginx
 
+# ToDo:
+# SSH SMTP DNS FTP HTTP HTTPS FTPS
+EXPOSE 22 25 53 20 21 80 443 990 989 
+
 CMD ["nginx"]
